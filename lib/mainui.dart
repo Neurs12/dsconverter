@@ -86,13 +86,13 @@ class _UIState extends State<UI> {
                             Theme.of(context).colorScheme.onError
                           ];
                           isDone = false;
-                          selectedFile = handle[0];
+                          selectedFile = handle;
                         } else {
                           selectFileIcon = Icon(Icons.check,
                               size: MediaQuery.of(context).size.height / 40);
                           selectColor = [null, null];
                           isDone = true;
-                          selectedFile = handle[0];
+                          selectedFile = handle;
                         }
                       });
                     });

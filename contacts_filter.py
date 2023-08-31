@@ -16,7 +16,7 @@ def main(path, convert, saveat, extratext, namesetting, sort):
 
         try:
             while True:
-                names.append(wsinp.cell_value(rowx=index, colx=4))
+                names.append(wsinp.cell_value(rowx=index, colx=5))
                 index += 1
         except: pass
 
@@ -26,8 +26,16 @@ def main(path, convert, saveat, extratext, namesetting, sort):
 
         while index <= max_index + 8:
             try:
-                if wsinp.cell_value(rowx=index, colx=31) != "":
-                    phones.update({names[tmp]: wsinp.cell_value(rowx=index, colx=31)})
+                if wsinp.cell_value(rowx=index, colx=32) != "":
+                    phones.update({names[tmp]: wsinp.cell_value(rowx=index, colx=32)})
+                    index += 1
+                    tmp += 1
+                    continue
+            except:
+                pass
+            try:
+                if wsinp.cell_value(rowx=index, colx=35) != "":
+                    phones.update({names[tmp]: wsinp.cell_value(rowx=index, colx=35)})
                     index += 1
                     tmp += 1
                     continue
@@ -35,15 +43,7 @@ def main(path, convert, saveat, extratext, namesetting, sort):
                 pass
             try:
                 if wsinp.cell_value(rowx=index, colx=34) != "":
-                    phones.update({names[tmp]: wsinp.cell_value(rowx=index, colx=34)})
-                    index += 1
-                    tmp += 1
-                    continue
-            except:
-                pass
-            try:
-                if wsinp.cell_value(rowx=index, colx=33) != "":
-                    phones.update({names[tmp]: wsinp.cell_value(rowx=index, colx=33)}) != ""
+                    phones.update({names[tmp]: wsinp.cell_value(rowx=index, colx=34)}) != ""
                     index += 1
                     tmp += 1
                     continue
