@@ -5,6 +5,10 @@
 Chuyển danh sách học sinh sang danh bạ từ VNEdu hoặc SMAS.
 </p>
 
+<div align=center>
+  <img src="https://skillicons.dev/icons?i=python,dart,flutter"/>
+</div>
+
 ## 1. Cách tải
 Chọn bản mới nhất ở phần "Releases" bên phải:
 
